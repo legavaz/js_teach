@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Привет</title>
+
+    <script>
+
+     function countToTen(){
+         var count = 0;
+         while (count < 10) {
+             count++;
+             document.getElementById("theCount").innerHTML+=
+                count+"<br>";
+         }
+         returnFileName();
+     }    
+
+     function returnFileName() {
+        //alert()
+        document.getElementById("id_fileName").innerHTML  =  "name file: "+ document.baseURI ;  
+        // array.forEach(element => document {
+            
+        // });
+     }
+
+    </script>
+
+</head>
+<body onload="countToTen();">
+    <h1> Посчитаем до 10 вместе с JS</h1>
+    <p id="theCount"></p>
+
+    <p id="id_fileName"></p>
+
+</body>
+
+
+</html>

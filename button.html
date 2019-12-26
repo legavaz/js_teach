@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Кнопка</title>
+
+    <script>
+
+        function returnFileName() {
+           mElement     =   document.getElementById("id_fileName");
+
+           if (mElement.innerHTML=="") {
+            mElement.innerHTML  =  "name file: "+ document.baseURI ;
+            
+           } else {
+            
+            mElement.innerHTML  =  "" ;    
+            
+           }
+        }
+   
+       </script>
+
+</head>
+<body>
+
+    <button id="bigButton" onclick="alert('Привет мир');">Щелкните тут</button>
+
+    <button id="bigButton2" onclick="returnFileName();">вызвать функцию</button>
+
+    <p id="id_fileName"></p>
+
+</body>
+
+
+</html>
