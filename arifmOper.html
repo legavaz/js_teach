@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>
+            Арифметические опреаторы
+        </title>
+    </head>
+    <body>
+        <h1>Отгадывание даты рождения</h1>
+        <p>
+            <ul>
+                <li> Введите число 7 </li>
+                <li> Умножьте его на месяц вашего рождения </li>
+            </ul>
+        </p>
+        
+        <script>
+        var numberSeven =   Number(prompt("Введите число 7 "));
+        var bitrhMonth =   Number(prompt("Введите месяц вашего рождения "));
+        var calculation = numberSeven*bitrhMonth;
+        calculation =calculation-1;
+        calculation=calculation*13;
+        var birthDay=Number(prompt("Введите число дня вашего рождения "));
+        calculation=calculation+birthDay;
+        calculation=calculation+3;
+        calculation=calculation*11;
+        calculation=calculation-bitrhMonth;
+        calculation=calculation-birthDay;
+        calculation=calculation/10;
+        calculation=calculation+11;
+        calculation=calculation/100;
+
+
+
+
+        document.write("вы родились: "+calculation);
+        </script>
+    </body>
+</html>
