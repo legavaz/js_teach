@@ -11,3 +11,5 @@ function showBadMovie() {
     var movie   =   "Знакомьтесь Джо блек"
     alert(movie+" - плохой фильм")    
 }
+
+let a=1;
